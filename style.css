@@ -1,0 +1,112 @@
+* { box-sizing: border-box;
+  background-image: url("grass.jpeg");
+  background-repeat: repeat;
+  margin: 0;
+  }
+
+.zombie-walk {
+  width: 829px;
+  height: 224px;
+  background-image: url("re.gif");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin: 0 auto;
+  animation: walk 15.0s steps(100) infinite;
+}
+.bike{
+  width: 829px;
+  height: 224px;
+  background-image: url("bike.gif");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin: 0 auto;
+  animation: walk 15.0s steps(100) infinite;
+}
+
+/*@keyframes walk {
+  100% { margin-left: 1124px;  }
+}*/
+.mvroad{
+  width: 100%;
+  height: 720px;
+  background-image: url("road.png");
+  background-repeat: repeat-x;
+  animation: move 1s steps(1000) infinite forwards;
+}
+
+.top-view{
+  width: 100%;
+  height: 100px;
+  background-image: url("grs.gif");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-position: center;
+  animation: move1 7s steps(1000) infinite forwards;
+}
+.bird{
+  width: 100%;
+  height: 100px;
+  background-image: url("birds.gif");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-position: center;
+  animation: bird 7s steps(1000) infinite forwards;
+}
+
+.bot-view{
+  width: 100%;
+  height: 200px;
+  background-image: url("was.gif");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position: center;
+  animation: move2 1s steps(1000) infinite forwards;
+}
+
+@keyframes move1 {
+  100% { background-position: fixed;}
+}
+@@keyframes walk {
+  0% {right: -20px;}
+  100% {right: 1px;}
+
+}
+@keyframes bird {
+  100% { background-position: fixed;}
+}
+@keyframes move1 {
+  100% { background-position: -1281px 0px;}
+}
+
+@keyframes move {
+  100% { background-position: -1281px 0px;}
+}
+
+.comet{
+  width: 303px;
+  height: 331px;
+  z-index: 1000;
+  background-image: url("comet.gif");
+  right: -80px;
+  top: -170px;
+  position: absolute;
+  transform: rotateX(65deg);
+}
+.comet{  animation: comet 7s ease infinite forwards;
+}
+@keyframes comet {
+
+  0% {top: -160vw; right:-2vw; }
+  30% {top: 4vw; right: 5vw; transform: scale(4);}
+  100% {top: 18vw; right: 30vw; transform: scale(8);}
+}
+
+
+
+
+
+/*@keyframes out {
+  100% { margin-left: 521px; }
+}*/
+
+/*, out 5s steps(100) infinite;*/
